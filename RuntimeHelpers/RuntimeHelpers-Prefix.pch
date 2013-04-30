@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RuntimeHelpers' target in the 'RuntimeHelpers' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
