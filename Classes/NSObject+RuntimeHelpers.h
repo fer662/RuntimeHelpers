@@ -34,4 +34,9 @@
  */
 + (void)swizzleClassMethod:(SEL)originalSelector withReplacement:(SEL)replacementSelector;
 
+/**
+ Add method implementations for instance methods
+ */
++ (BOOL)addInstanceMethod:(SEL)originalSelector method:(SEL)method;
+
 @end

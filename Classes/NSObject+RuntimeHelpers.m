@@ -88,4 +88,11 @@
 	method_exchangeImplementations(replacementMethod, originalMethod);
 }
 
++ (BOOL)addInstanceMethod:(SEL)originalSelector method:(SEL)method
+{
+	Method replacementMethod = class_getInstanceMethod([self class], method);
+    BOOL success = class_addMethod([self class], originalSelector, method_getImplementation(replacementMethod), method_getTypeEncoding(replacementMethod));
+    return success;
+}
+
 @end
