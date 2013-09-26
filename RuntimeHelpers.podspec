@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://EXAMPLE/UIKitHelpers"
   s.license      = 'MIT'
   s.author       = { "Fernando Mazzon" => "Fernando.Mazzon@rga.com" }
-  s.source       = { :git => "git://dt-imac-ba-003/pods/RuntimeHelpers", :tag => "0.0.1" }
+  s.source       = { :git => "https://fmazzon@bitbucket.org/rgaps/runtimehelpers.git", :tag => "0.0.1" }
   s.source_files = 'Classes', 'Classes/**/*.{h,m}'
   s.public_header_files = 'Classes/**/*.h'
   s.framework  = 'Foundation'
