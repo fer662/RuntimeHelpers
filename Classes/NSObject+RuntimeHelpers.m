@@ -74,6 +74,11 @@
     return value;
 }
 
+- (void)setAssociatedObject:(id)object forKey:(void *)key
+{
+    objc_setAssociatedObject(self, key, object, OBJC_ASSOCIATION_RETAIN);
+}
+
 + (void)swizzleClassMethod:(SEL)originalSelector withReplacement:(SEL)replacementSelector
 {
 	Method originalMethod = class_getClassMethod([self class], originalSelector);

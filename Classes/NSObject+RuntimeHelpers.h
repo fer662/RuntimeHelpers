@@ -25,6 +25,11 @@
 - (id)associatedObjectForKey:(void *)key orBlockResult:(id(^)())block;
 
 /**
+ Sets an object for a key in the callee, using OBJC_ASSOCIATION_RETAIN
+ */
+- (void)setAssociatedObject:(id)object forKey:(void *)key;
+
+/**
  Exchange method implementations for instance methods
  */
 + (void)swizzleInstanceMethod:(SEL)originalSelector withReplacement:(SEL)replacementSelector;
